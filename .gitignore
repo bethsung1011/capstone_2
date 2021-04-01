@@ -1,2 +1,5 @@
 *.jpg 
 *.png
+train-20210331T214702Z-001.zip
+*checkpoint.ipynb
+
