@@ -10,40 +10,27 @@
 **Files**
 
 * train.csv
-
-    - image_id: the foreign key for the parquet files
     - grapheme_root: the first of the three target classes
     - vowel_diacritic: the second target class
     - consonant_diacritic: the third target class
-    - grapheme: the complete character. Provided for informational purposes only, you should not need to use this.
+    - grapheme: the complete character
 
     * test.csv
-
     - Every image in the test set will require three rows of predictions, one for each component. 
     This csv specifies the exact order for you to provide your labels. 
     - row_id: foreign key to the sample submission 
     - image_id: foreign key to the parquet file 
     - component: the required target class for the row (grapheme_root, vowel_diacritic, or consonant_diacritic)
 
-* sample_submission.csv
-
+* sample_submission.csv 
     - row_id: foreign key to test.csv
     - target: the target column
 
-* (train/test).parquet
+* (train/test).parquet  - Each parquet file contains tens of thousands of 137x236 grayscale images.
 
-    - Each parquet file contains tens of thousands of 137x236 grayscale images. The images have been provided in the parquet format for I/O and space efficiency. Each row in the parquet files contains an image_id column, and the flattened image.
+* class_map.csv    - Maps the class labels to the actual Bengali grapheme components.*
 
-* class_map.csv
-
-    - Maps the class labels to the actual Bengali grapheme components.*
-
-
-<!-- ![Grapheme](img/2.png)
-![Why Grapheme?](img/3.png)
-![Why Common Graphemes in Contest?](img/4.png)
-![Bengali Orthography](img/5.png)
-![Labels example](img/6.png) -->
+# What are Graphemes? 
 
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/2%20_.gif)
 
@@ -56,39 +43,114 @@
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/6%20_.gif)
 
 
+[click here to read mpre about it](https://www.kaggle.com/c/bengaliai-cv19/discussion/123002)
 
 
-# Most used top 10 Grapheme Roots in training set
-![](https://github.com/bethsung1011/capstone_2/blob/main/img/top%2010%20Grapheme%20Roots%20in%20training%20data.gif)
 
-# Least used 10 Grapheme Roots in training set
-![](https://github.com/bethsung1011/capstone_2/blob/main/img/Least%20used%2010%20Grapheme%20Roots%20in%20training%20data.gif)
+# Exploratory Data Analysis
 
-# Top 5 Vowel Diacritic in taining data
-![](https://github.com/bethsung1011/capstone_2/blob/main/img/Top%205%20Vowel%20Diacritic%20%20in%20training%20data.gif)
 
-# Top 5 Consonant Diacritic in training data
+
+## Top 5 Consonant Diacritic in training data
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/Top%205%20Consonant%20Diacritic%20in%20training%20data.gif)
 
-# Distribution of Grapheme Roots
+## Top 5 Vowel Diacritic in taining data
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/Top%205%20Vowel%20Diacritic%20%20in%20training%20data.gif)
 
-![](https://github.com/bethsung1011/capstone_2/blob/main/img/dist_Grapheme%20Roots%20_.gif)
+## Most used top 10 Grapheme Roots in training set
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/top%2010%20Grapheme%20Roots%20in%20training%20data.gif)
 
-# Distribution of Vowel Diacritic
+## Least used 10 Grapheme Roots in training set
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/Least%20used%2010%20Grapheme%20Roots%20in%20training%20data.gif)
 
-![](https://github.com/bethsung1011/capstone_2/blob/main/img/dist_%20Vowel%20Diacritic%20.gif)
-
-# Distribution of Consonant Diacritic
+## Distribution of Consonant Diacritic
 
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/dist_Consonant%20Diacritic.gif)
 
+## Distribution of Vowel Diacritic
 
-# Model 
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/dist_%20Vowel%20Diacritic%20.gif)
+
+## Distribution of Grapheme Roots
+
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/dist_Grapheme%20Roots%20_.gif)
+
+
+# Model summary
+
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/model%20summary.gif)
+
+# Plot Model
 
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/model1_.gif)
 
 
 # Graph
+![Consonant Diacritic loss and accuracy Graph](https://github.com/bethsung1011/capstone_2/blob/main/img/Consonant%20Diacritic%20graph.gif)
+![Vowel Diacritic loss and accuracy Graph](https://github.com/bethsung1011/capstone_2/blob/main/img/Vowel%20Diacritic%20graph.gif)
+![Grapheme Roots loss and accuracy Graph](https://github.com/bethsung1011/capstone_2/blob/main/img/Grapheme%20Roots%20graph.gif)
+
+
+# Confusion Matrix
+![Consonant Diacritic Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/Consonant%20Diacritic%20confusion%20matrix.gif)
+![Vowel Diacritic Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/vowel%20confusion%20matrix.gif)
+![Grapheme Roots Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/Grapheme%20Roots%20confusion%20matrix.gif)
+
+# Test Result Summary 
+
+## Previous few times model result was ugly
+ 
+    * consonant_diacritic : 
+        * Test score: 2.7546441555023193
+        * Test accuracy: 0.6499999761581421
+
+    * vowel_diacritic : 
+        * Test score: 1.8599588871002197
+        * Test accuracy: 0.5040000081062317
+
+    * grapheme_root : 
+        * Test score: 4.7975382804870605
+        * Test accuracy: 0.02500000037252903
+
+
+
+    * consonant_diacritic :
+        * Test score: 0.8095945119857788
+        * Test accuracy: 0.7200000286102295
+
+    * vowel_diacritic : 
+        * Test score: 1.0902100801467896
+        * Test accuracy: 0.6190000176429749
+
+    * grapheme_root :         
+        * Test score: 4.837403774261475
+        * Test accuracy: 0.02500000037252903
+
+
+
+## Tweaks
+Maybe it was too deep?
+
+- reduced layers
+- reduced normalization 
+- decreased learning rate from 0.0001 to 0.00001
+- training epochs = 30/ steps = 180
+- testing steps = 30 
+
+
+## This time it did little better than random guess except graphem root 
+
+    * consonant_diacritic :
+        * Test score: 0.6155465841293335
+        * Test accuracy: 0.8299999833106995
+
+    * vowel_diacritic : 
+        * Test score:  
+        * Test accuracy:  
+
+    * grapheme_root :         
+        * Test score:  
+        * Test accuracy:  
 
 
 
