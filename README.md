@@ -9,28 +9,28 @@
 
 **Files**
 
-    * train.csv
-        - grapheme_root: the first of the three target classes
-        - vowel_diacritic: the second target class
-        - consonant_diacritic: the third target class
-        - grapheme: the complete character
+* train.csv
+    - grapheme_root: the first of the three target classes
+    - vowel_diacritic: the second target class
+    - consonant_diacritic: the third target class
+    - grapheme: the complete character
 
-    * test.csv
-        - Every image in the test set will require three rows of predictions, one for each component. 
-        This csv specifies the exact order for you to provide your labels. 
-        - row_id: foreign key to the sample submission 
-        - image_id: foreign key to the parquet file 
-        - component: the required target class for the row (grapheme_root, vowel_diacritic, or consonant_diacritic)
+* test.csv
+    - Every image in the test set will require three rows of predictions, one for each component. 
+    This csv specifies the exact order for you to provide your labels. 
+    - row_id: foreign key to the sample submission 
+    - image_id: foreign key to the parquet file 
+    - component: the required target class for the row (grapheme_root, vowel_diacritic, or consonant_diacritic)
 
-    * sample_submission.csv 
-        - row_id: foreign key to test.csv
-        - target: the target column
+* sample_submission.csv 
+    - row_id: foreign key to test.csv
+    - target: the target column
 
-    * (train/test).parquet  
-        - Each parquet file contains tens of thousands of 137x236 grayscale images.
+* (train/test).parquet  
+    - Each parquet file contains tens of thousands of 137x236 grayscale images.
 
-    * class_map.csv    
-        - Maps the class labels to the actual Bengali grapheme components.*
+* class_map.csv    
+    - Maps the class labels to the actual Bengali grapheme components.
 
 # What are Graphemes? 
 
@@ -50,8 +50,6 @@
 
 
 # Exploratory Data Analysis
-
-
 
 ## Top 5 Consonant Diacritic in training data
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/Top%205%20Consonant%20Diacritic%20in%20training%20data.gif)
@@ -90,17 +88,17 @@
 # Graph
 ![Consonant Diacritic loss and accuracy Graph](https://github.com/bethsung1011/capstone_2/blob/main/img/Consonant%20Diacritic%20graph.gif)
 ![Vowel Diacritic loss and accuracy Graph](https://github.com/bethsung1011/capstone_2/blob/main/img/Vowel%20Diacritic%20graph.gif)
-![Grapheme Roots loss and accuracy Graph](https://github.com/bethsung1011/capstone_2/blob/main/img/Grapheme%20Roots%20graph.gif)
+![Grapheme Roots loss and accuracy Graph](https://github.com/bethsung1011/capstone_2/blob/main/img/Grapheme%20Roots%20graph_.gif)
 
 
 # Confusion Matrix
 ![Consonant Diacritic Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/Consonant%20Diacritic%20confusion%20matrix.gif)
 ![Vowel Diacritic Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/vowel%20confusion%20matrix.gif)
-![Grapheme Roots Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/Grapheme%20Roots%20confusion%20matrix.gif)
+![Grapheme Roots Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/Grapheme%20Roots%20confusion%20matrix_.gif)
 
 # Test Result Summary 
 
-## Previous few times model result was ugly
+## Initially the model result was ugly
  
     * consonant_diacritic : 
         * Test score: 2.7546441555023193
@@ -114,7 +112,16 @@
         * Test score: 4.7975382804870605
         * Test accuracy: 0.02500000037252903
 
+## Tweak
+    * Maybe it was too shallow?    
+        * added layers
+        * added 0.0001 learning rate 
+        * added 3 normalization 
+        * training epochs = 2 / steps = 300
+        * testing steps = 30 
 
+
+## The model result did tiny bit better 
 
     * consonant_diacritic :
         * Test score: 0.8095945119857788
@@ -130,7 +137,7 @@
 
 
 
-## Tweaks
+## Tweak
     * Maybe it was too deep?
 
         * reduced layers
@@ -138,6 +145,7 @@
         * decreased learning rate from 0.0001 to 0.00001
         * training epochs = 30/ steps = 180
         * testing steps = 30 
+
 
 
 ## This time it did little better than random guess except graphem root 
@@ -157,3 +165,10 @@
 
 
 
+# Future Extensions of this project 
+
+    * Combining 3 target labels and run at the same time 
+    * 
+
+# What tools are used
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/what%20used.gif)
