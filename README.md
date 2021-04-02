@@ -29,7 +29,7 @@
     - target: the target column
 
 * (train/test).parquet  
-    - Each parquet file contains tens of thousands of 137x236 grayscale images.
+    - Each parquet file contains tens of thousands of 137x236 grayscale images. (warning sign)
 
 * class_map.csv    
     - Maps the class labels to the actual Bengali grapheme components.
@@ -167,12 +167,20 @@
 
 
 
+
 # Future Extensions of this project 
 
     * Combining 3 target labels and run at the same time 
     * Make ongoing hand-written word and compare with trained model 
     * Boost up accuracy
-    * adding more characters to balance the sample variation
+    * Adding more characters to balance the sample variation
+    * Multi-label stratified Kfold
+
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/translate.gif)
+
+
+Thanks.
+
 
 # What tools are used
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/what%20used.gif)
