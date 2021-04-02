@@ -39,8 +39,14 @@
     - Maps the class labels to the actual Bengali grapheme components.*
 
 
-![Grapheme](img/2.png)
+<!-- ![Grapheme](img/2.png)
 ![Why Grapheme?](img/3.png)
 ![Why Common Graphemes in Contest?](img/4.png)
 ![Bengali Orthography](img/5.png)
-![Labels example](img/6.png)
+![Labels example](img/6.png) -->
+
+![](img/2.png)
+![](img/3.png)
+![](img/4.png)
+![](img/5.png)
+![](img/6.png)
