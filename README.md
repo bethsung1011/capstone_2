@@ -54,3 +54,41 @@
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/5%20_.gif)
 
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/6%20_.gif)
+
+
+
+
+# Most used top 10 Grapheme Roots in training set
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/top%2010%20Grapheme%20Roots%20in%20training%20data.gif)
+
+# Least used 10 Grapheme Roots in training set
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/Least%20used%2010%20Grapheme%20Roots%20in%20training%20data.gif)
+
+# Top 5 Vowel Diacritic in taining data
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/Top%205%20Vowel%20Diacritic%20%20in%20training%20data.gif)
+
+# Top 5 Consonant Diacritic in training data
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/Top%205%20Consonant%20Diacritic%20in%20training%20data.gif)
+
+# Distribution of Grapheme Roots
+
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/dist_Grapheme%20Roots%20_.gif)
+
+# Distribution of Vowel Diacritic
+
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/dist_%20Vowel%20Diacritic%20.gif)
+
+# Distribution of Consonant Diacritic
+
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/dist_Consonant%20Diacritic.gif)
+
+
+# Model 
+
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/model1_.gif)
+
+
+# Graph
+
+
+
