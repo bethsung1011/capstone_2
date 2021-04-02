@@ -9,26 +9,28 @@
 
 **Files**
 
-* train.csv
-    - grapheme_root: the first of the three target classes
-    - vowel_diacritic: the second target class
-    - consonant_diacritic: the third target class
-    - grapheme: the complete character
+    * train.csv
+        - grapheme_root: the first of the three target classes
+        - vowel_diacritic: the second target class
+        - consonant_diacritic: the third target class
+        - grapheme: the complete character
 
     * test.csv
-    - Every image in the test set will require three rows of predictions, one for each component. 
-    This csv specifies the exact order for you to provide your labels. 
-    - row_id: foreign key to the sample submission 
-    - image_id: foreign key to the parquet file 
-    - component: the required target class for the row (grapheme_root, vowel_diacritic, or consonant_diacritic)
+        - Every image in the test set will require three rows of predictions, one for each component. 
+        This csv specifies the exact order for you to provide your labels. 
+        - row_id: foreign key to the sample submission 
+        - image_id: foreign key to the parquet file 
+        - component: the required target class for the row (grapheme_root, vowel_diacritic, or consonant_diacritic)
 
-* sample_submission.csv 
-    - row_id: foreign key to test.csv
-    - target: the target column
+    * sample_submission.csv 
+        - row_id: foreign key to test.csv
+        - target: the target column
 
-* (train/test).parquet  - Each parquet file contains tens of thousands of 137x236 grayscale images.
+    * (train/test).parquet  
+        - Each parquet file contains tens of thousands of 137x236 grayscale images.
 
-* class_map.csv    - Maps the class labels to the actual Bengali grapheme components.*
+    * class_map.csv    
+        - Maps the class labels to the actual Bengali grapheme components.*
 
 # What are Graphemes? 
 
@@ -129,13 +131,13 @@
 
 
 ## Tweaks
-Maybe it was too deep?
+    * Maybe it was too deep?
 
-- reduced layers
-- reduced normalization 
-- decreased learning rate from 0.0001 to 0.00001
-- training epochs = 30/ steps = 180
-- testing steps = 30 
+        * reduced layers
+        * reduced normalization 
+        * decreased learning rate from 0.0001 to 0.00001
+        * training epochs = 30/ steps = 180
+        * testing steps = 30 
 
 
 ## This time it did little better than random guess except graphem root 
@@ -145,12 +147,13 @@ Maybe it was too deep?
         * Test accuracy: 0.8299999833106995
 
     * vowel_diacritic : 
-        * Test score:  
-        * Test accuracy:  
+        * Test score: 1.0217700004577637
+        * Test accuracy: 0.6370000243186951
+
 
     * grapheme_root :         
-        * Test score:  
-        * Test accuracy:  
+        * Test score: 4.705227375030518
+        * Test accuracy: 0.03500000014901161
 
 
 
