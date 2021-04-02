@@ -2,6 +2,8 @@
 
 # Bengali AI Handwritten Grapheme Classification
 
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/intro.gif)
+
 ### Classify the components of handwritten Bengali
 
 [dataset](https://www.kaggle.com/c/bengaliai-cv19)
