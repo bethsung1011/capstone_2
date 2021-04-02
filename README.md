@@ -175,12 +175,18 @@
     * Boost up accuracy
     * Adding more characters to balance the sample variation
     * Multi-label stratified Kfold
+    
+## Thanks.
 
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/translate.gif)
 
 
-Thanks.
 
 
-# What tools are used
+
+
+
+
+
+##  What tools are used
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/what%20used.gif)
