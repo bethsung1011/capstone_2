@@ -87,13 +87,13 @@
 
 # Graph
 ![Consonant Diacritic loss and accuracy Graph](https://github.com/bethsung1011/capstone_2/blob/main/img/Consonant%20Diacritic%20graph.gif)
-![Vowel Diacritic loss and accuracy Graph](https://github.com/bethsung1011/capstone_2/blob/main/img/Vowel%20Diacritic%20graph.gif)
+![Vowel Diacritic loss and accuracy Graph](https://github.com/bethsung1011/capstone_2/blob/main/img/Vowel%20Diacritic%20graph_1.gif)
 ![Grapheme Roots loss and accuracy Graph](https://github.com/bethsung1011/capstone_2/blob/main/img/Grapheme%20Roots%20graph_.gif)
 
 
 # Confusion Matrix
 ![Consonant Diacritic Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/Consonant%20Diacritic%20confusion%20matrix.gif)
-![Vowel Diacritic Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/vowel%20confusion%20matrix.gif)
+![Vowel Diacritic Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/vowel%20confusion%20matrix_1.gif)
 ![Grapheme Roots Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/Grapheme%20Roots%20confusion%20matrix_.gif)
 
 # Test Result Summary 
@@ -168,7 +168,9 @@
 # Future Extensions of this project 
 
     * Combining 3 target labels and run at the same time 
-    * 
+    * Make ongoing hand-written word and compare with trained model 
+    * Boost up accuracy
+    * adding more characters to balance the sample variation
 
 # What tools are used
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/what%20used.gif)
