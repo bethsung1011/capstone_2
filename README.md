@@ -45,8 +45,12 @@
 ![Bengali Orthography](img/5.png)
 ![Labels example](img/6.png) -->
 
-![](img/2.png)
-![](img/3.png)
-![](img/4.png)
-![](img/5.png)
-![](img/6.png)
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/2%20_.gif)
+
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/3%20_.gif)
+
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/4%20_.gif)
+
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/5%20_.gif)
+
+![](https://github.com/bethsung1011/capstone_2/blob/main/img/6%20_.gif)
