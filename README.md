@@ -47,7 +47,7 @@
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/6%20_.gif)
 
 
-[click here to read mpre about it](https://www.kaggle.com/c/bengaliai-cv19/discussion/123002)
+[click here to read more about it](https://www.kaggle.com/c/bengaliai-cv19/discussion/123002)
 
 
 
@@ -94,8 +94,11 @@
 
 
 # Confusion Matrix
+
 ![Consonant Diacritic Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/Consonant%20Diacritic%20confusion%20matrix.gif)
+
 ![Vowel Diacritic Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/vowel%20confusion%20matrix_1.gif)
+
 ![Grapheme Roots Confusion Matrix](https://github.com/bethsung1011/capstone_2/blob/main/img/Grapheme%20Roots%20confusion%20matrix_.gif)
 
 # Test Result Summary 
@@ -116,9 +119,9 @@
 
 ## Tweak
     * Maybe it was too shallow?    
-        * added layers
+        * added many more layers
         * added 0.0001 learning rate 
-        * added 3 normalization 
+        * added 3 normalization in between
         * training epochs = 2 / steps = 300
         * testing steps = 30 
 
@@ -145,7 +148,7 @@
         * reduced layers
         * reduced normalization 
         * decreased learning rate from 0.0001 to 0.00001
-        * training epochs = 30/ steps = 180
+        * training epochs = 30/ steps = 180 
         * testing steps = 30 
 
 
@@ -175,8 +178,9 @@
     * Boost up accuracy
     * Adding more characters to balance the sample variation
     * Multi-label stratified Kfold
-    
-## Thanks.
+
+
+# Thank you. 
 
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/translate.gif)
 
@@ -190,3 +194,7 @@
 
 ##  What tools are used
 ![](https://github.com/bethsung1011/capstone_2/blob/main/img/what%20used.gif)
+
+
+
+# Special Thanks to Skylar, Land, Jackson and Kyle! 
